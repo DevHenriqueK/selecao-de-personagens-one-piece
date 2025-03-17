@@ -1,0 +1,75 @@
+.section.tripulation{
+    background-image: url(../images/desktop-images/mugiwaras-bg-desktop.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.section.luffy{
+    background-image: url(../images/desktop-images/luffy-bg-desktop.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.section.zoro{
+    background-image: url(../images/desktop-images/zoro-bg-desktop.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.section.nami{
+    background-image: url(../images/desktop-images/nami-bg-desktop.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.section.usopp{
+    background-image: url(../images/desktop-images/usopp-bg-desktop.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.section.sanji{
+    background-image: url(../images/desktop-images/sanji-bg-desktop.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.section.chopper{
+    background-image: url(../images/desktop-images/chopper-bg-desktop.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.section.robin{
+    background-image: url(../images/desktop-images/robin-bg-desktop.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.section.franky{
+    background-image: url(../images/desktop-images/franky-bg-desktop.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.section.brook{
+    background-image: url(../images/desktop-images/brook-bg-desktop.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.section.jinbe{
+    background-image: url(../images/desktop-images/jinbe-bg-desktop.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 376px){
+    .section.usopp {
+        background-image: url(../images/mobile-images/usopp-bg-mobile.png);
+    }
+
+    .section.brook {
+        background-image: url(../images/mobile-images/brook-bg-mobile.png);
+    }
+}
