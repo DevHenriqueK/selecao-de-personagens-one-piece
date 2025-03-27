@@ -1,37 +1,20 @@
-const charactersIcons = document.querySelectorAll('.icon')
-const section = document.querySelectorAll('.section')
+const charactersIcons = document.querySelectorAll('.icon');
+const sections = document.querySelectorAll('.section');
 
 charactersIcons.forEach(icon => {
-    icon.addEventListener('click', function () {
-        const atualIconSelected = document.querySelector('.selected')
-        if (atualIconSelected) atualIconSelected.classList.remove('selected')
+    icon.addEventListener('click', () => {
 
-        icon.classList.add('selected')
+        document.querySelector('.selected')?.classList.remove('selected');
+        document.querySelector('.actived')?.classList.remove('actived');
 
+        icon.classList.add('selected');
 
-        const atualSection = document.querySelector('.actived')
-        if (atualSection) atualSection.classList.remove('actived')
+        const character = [...icon.classList].find(cls =>
+            ['luffy', 'zoro', 'nami', 'usopp', 'sanji', 'chopper', 'robin', 'franky', 'brook', 'jinbe'].includes(cls)
+        );
 
-        section.forEach(section => {
-            if (icon.classList.contains('luffy') && section.classList.contains('luffy')) section.classList.add('actived')
-
-            else if (icon.classList.contains('zoro') && section.classList.contains('zoro')) section.classList.add('actived')
-                
-            else if (icon.classList.contains('nami') && section.classList.contains('nami')) section.classList.add('actived')
-
-            else if (icon.classList.contains('usopp') && section.classList.contains('usopp')) section.classList.add('actived')
-
-            else if (icon.classList.contains('sanji') && section.classList.contains('sanji')) section.classList.add('actived')
-
-            else if (icon.classList.contains('chopper') && section.classList.contains('chopper')) section.classList.add('actived')
-
-            else if (icon.classList.contains('robin') && section.classList.contains('robin')) section.classList.add('actived')
-
-            else if (icon.classList.contains('franky') && section.classList.contains('franky')) section.classList.add('actived')
-
-            else if (icon.classList.contains('brook') && section.classList.contains('brook')) section.classList.add('actived')
-
-            else if (icon.classList.contains('jinbe') && section.classList.contains('jinbe')) section.classList.add('actived')
-        })
-    })
-})
+        if (character) {
+            document.querySelector(`.section.${character}`)?.classList.add('actived');
+        }
+    });
+});

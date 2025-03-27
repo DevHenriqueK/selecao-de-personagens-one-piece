@@ -64,7 +64,7 @@
     background-position: center;
 }
 
-@media (max-width: 376px){
+@media (max-width: 400px){
     .section.usopp {
         background-image: url(../images/mobile-images/usopp-bg-mobile.png);
     }
