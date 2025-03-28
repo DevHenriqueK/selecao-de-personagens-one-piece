@@ -70,3 +70,35 @@ body {
 .icons .icon.selected img {
     transform: scale(0.9);
 }
+
+.icons .luffy {
+    order: 1;
+}
+
+.icons .zoro {
+    order: 3;
+}
+.icons .nami {
+    order: 5;
+}
+.icons .usopp {
+    order: 7;
+}
+.icons .sanji {
+    order: 9;
+}
+.icons .chopper {
+    order: 2;
+}
+.icons .robin {
+    order: 4;
+}
+.icons .franky {
+    order: 6;
+}
+.icons .brook {
+    order: 8;
+}
+.icons .jinbe {
+    order: 10;
+}
